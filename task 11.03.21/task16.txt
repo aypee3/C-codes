@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int i,j,s;
+		for(i=1;i<=5;i++)
+		{
+			for(j=0;j<40;j++)
+			{
+			printf(" ");
+			}
+			for(j=1;j<=(5-i);j++)
+			{
+				printf(" ");
+			}
+			for(s=1;s<=(2*i-1);s++)
+			{
+				printf("*");
+			}
+			printf("\n");
+		}
+		
+		for(i=1;i<=1;i++)
+		{
+			for(j=0;j<40;j++)
+			{
+			printf(" ");
+			}
+			printf("~O~O~O~O~\n");
+		}
+		
+		
+		for(i=1;i<=5;i++)
+		{
+			for(j=0;j<40;j++)
+			{
+			printf(" ");
+			}
+			for(j=1;j<i;j++)
+			{
+				printf(" ");
+			}	
+		
+			for(j=0;j<11-2*i;j++)
+			{
+				printf("*");
+			}
+			printf("\n");
+		}
+	return 0;
+}

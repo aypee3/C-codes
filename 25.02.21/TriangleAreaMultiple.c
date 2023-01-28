@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int b,h;
+    char ch='y';
+	float area;
+    for(;;)
+    {
+	    if(ch=='n'|| ch=='N')
+	    {
+	    	break;
+		}
+		else if(ch=='y'|| ch=='Y')
+		{
+			printf("enter the value of base and height:\n");
+		    scanf("%d%d",&b,&h);
+		    fflush(stdin);
+		    area=(b*h)/2.0;
+		    printf("Area of the triangle is(in square units):%.2f",area);
+		    printf("Do you want to continue? y/n:");
+		    scanf("%c", &ch);
+		}
+		else
+		{
+		printf("invalid input");
+		break;
+	}
+	}
+    return 0;
+}

@@ -1,0 +1,101 @@
+	
+#include<stdio.h>
+#include<math.h>
+void f1()
+{
+	float x,y,sum;
+	printf("enter the value of x and y:\n");
+	scanf("%f%f", &x,&y);
+	sum=x+y;
+	printf("sum of x + y is: %0.2f",sum);
+}
+void f2()
+{
+	float x,y,sub;
+	printf("enter the value of x and y:\n");
+	scanf("%f%f", &x,&y);
+	sub=x-y;
+	printf(" Subtracting x-y is: %0.2f",sub);
+}
+void f3()
+{
+	float x,y,mult;
+	printf("enter the value of x and y:\n");
+	scanf("%f%f", &x,&y);
+	mult=x*y;
+	printf(" Multiplying x*y is: %0.2f",mult);
+}
+void f4()
+{
+	float x,y,div;
+	printf("enter the value of x and y:\n");
+	scanf("%f%f", &x,&y);
+	div=x/y;
+	printf(" Dividing x/y is: %0.2f",div);
+}
+void f5()
+{
+	float x,y,p1;
+	printf("enter the value of x and y:\n");
+	scanf("%f%f", &x,&y);
+	p1=pow(x,y);
+	printf("power of x^y is: %f",p1);
+}
+
+void f6()
+{
+	float x,s1;
+	printf("enter the number:\n");
+	scanf("%f", &x);
+	s1=sqrt(x);
+	printf("square root of %0.2f is = %.2f",x,s1);
+}
+void f7()
+{
+	double x,n,s2;
+	printf("enter the number and the required nth root:\n");
+	scanf("%lf%lf", &x, &n);
+	s2=pow(x,1.0/n);
+	printf("%0.2lfth root of %0.2lf is = %lf",n,x,s2);
+}
+main()
+{
+	printf("***Hello Calculator***\n");
+	printf("----------------------\n");
+	printf("Select the menu number from the list:-\n 1.Add\n 2.Subtract\n 3.Multiply\n 4.Divide\n 5.Power\n 6.Square root\n 7.Nth root of a number\n 8.Exit\n\n");
+	
+	int s;
+	scanf("%d", &s);
+	switch(s)
+	{
+		case 1: f1();
+			break;
+			
+		case 2: f2();
+			break;	
+		case 3: f3();
+			break;
+		case 4: f4();
+			break;	
+		case 5: f5();
+			break;
+		case 6: f6();
+			break;
+		case 7: f7();
+			break;
+		case 8:
+			return 0;
+			break;
+		default:
+			printf("Invalid input");
+			break;
+			
+	}
+}
+
+		
+		
+	
+
+
+

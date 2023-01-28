@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+	char name1[20];
+	gets(name1);
+	char name2[20];
+	gets(name2);
+	fflush(stdin);
+	int len=strlen(name1);
+	printf("The length is %d\n", len);
+	printf("The full name is %s \n", strcat(name1,name2));// strcat concatinates i.e. unites
+	puts(name1);//now takes full name input  
+	puts(name2); // remains as before
+	puts(strrev(name1));// reverses name and changes whole sreing from here unlike JAVA(where sobjects are immutable or dont change
+	puts(strlwr(name1));// now prints lower alplabets in reverse
+	puts(strupr(name1));// now prints upper alphabets in reverse
+	printf("the result is %d\n", strcmp(name1,name2));// for comparision of ASCII values like true or false so prints 1 or -1 or 0
+	puts(strrev(strupr(name1)));
+	
+	return 0;
+}

@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+int c;
+printf("The first 100 numbers are:\n");
+for(c=100;c>0;c--)	
+{printf("%d\t",c);
+if(c%10==1)
+printf("\n");
+}
+return 0;
+}

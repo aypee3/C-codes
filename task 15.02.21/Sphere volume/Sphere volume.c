@@ -1,0 +1,23 @@
+# include<stdio.h>
+
+int main()
+
+{
+
+printf(" Volume of Sphere\n");
+
+int r;
+float pi= 3.14, volume;
+
+printf   ("enter the value of radius:\n");
+scanf ("%d", &r);
+
+
+
+volume = (4*pi*r*r*r)/ (float) 3;
+
+printf("Volume of the Sphere is(in cube units) = %0.2f \n", volume);
+
+return 0;
+	
+}

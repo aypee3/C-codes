@@ -1,0 +1,23 @@
+#include<stdio.h>
+//call by reference
+void sw(int *a, int *b)
+{
+int t;
+	t=*a;
+	*a=*b;
+	*b=t;
+	printf("the value & address of new a is: %d and %d\n", *a, a );// *a means value at address(if we write prinf a , b only then it prints only address
+	printf("the value & address of new b is : %d and %d\n\n", *b, b);
+
+}
+int main()
+{
+	int a,b;
+	printf("Enter the two numbers a and b to swap\n");
+	scanf("%d%d", &a, &b);
+	printf("The value & address of a and b before swapping is %d & %d and %d & %d respectively\n\n", a,&a,b,&b);
+	sw(&a, &b);
+	printf("the value swapped a is: %d\n", a );
+	printf("the value of swapped b is : %d\n", b);
+	return 0;
+}

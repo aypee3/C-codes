@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<math.h>
+void f1()
+{
+	int x=2,y=4,p1;
+	p1=pow(x,y);
+	printf("power of x^y is %d",p1);
+}
+
+void f2()
+{
+	int x=4,y=9,s1,s2;
+	s1=sqrt(x);
+	s2=sqrt(y);
+	printf("square root\t of x is = %d and\n\t\t of y is = %d",s1,s2 );
+}
+
+main()
+{
+	//int x=4,y=9;
+
+	printf("Select the menu number from the list:-\n 1.power\n 2.square\n 3.exit\n\n");
+	
+	int s;
+	scanf("%d", &s);
+	switch(s)
+	{
+		case 1: f1();
+			break;
+			
+		case 2: f2();
+			break;	
+			
+		case 3:
+			return 0;
+			break;
+			
+	}
+}
+
+		
+		
+	
+
+

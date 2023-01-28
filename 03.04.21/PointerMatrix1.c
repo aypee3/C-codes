@@ -1,0 +1,44 @@
+#include<stdio.h>
+int main()
+{
+	int add[3][3], matr1[3][3], matr2[3][3];
+	int i,j;
+	printf("Enter the values of the first 3x3 matrix by row:\n");
+	for(i=0;i<3;i++)
+	{
+		printf("Row %d :\n",i+1);
+		for(j=0;j<3;j++)
+		{
+			scanf("%d", (*(matr1+i)+j));
+		}
+	}
+	
+	printf("Enter the values of the second 3x3 matrix by row:\n");
+	for(i=0;i<3;i++)
+	{
+		printf("Row %d :\n",i+1);
+		for(j=0;j<3;j++)
+		{
+			scanf("%d", (*(matr2+i)+j));
+		}
+	}
+	
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			*(*(add+i)+j)=*(*(matr1+i)+j)+*(*(matr2+i)+j);
+		}
+	}
+	
+	printf("The resultant Matrix Addition is :\n");
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("  %d\t", *(*(add+i)+j));
+		}
+		printf("\n");
+	}
+return 0;
+}

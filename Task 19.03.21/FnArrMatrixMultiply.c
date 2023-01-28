@@ -1,0 +1,68 @@
+#include<stdio.h>
+int matr(int a, int b, int c, int d)
+{
+	int i,j,k;
+	int first[100][100], second[100][100], mult[100][100];
+	printf("Enter the values of the first matrix\n");
+	
+	for(i=0;i<a;i++)
+	{
+		for(j=0;j<b;j++)
+		{
+		scanf("%d", &first[i][j]);
+		}
+		printf("\n");
+	}
+	printf("Enter the values of the second matrix\n");
+	for(i=0;i<c;i++)
+	{
+		for(j=0;j<d;j++)
+		{
+		scanf("%d", &second[i][j]);
+		}
+		printf("\n");
+	}
+	
+	for(i=0;i<a;i++)
+	{
+		for(j=0;j<d;j++)
+		{
+			for(k=0;k<c;k++)
+			mult[i][j]=mult[i][j] + first[i][k]*second[k][j];
+		}
+		
+	}
+	
+	printf("The final result of the Matrix Multiplication is:\n");
+	for(i=0;i<a;i++)
+	{
+		for(j=0;j<d;j++)
+		{
+		printf("%d\t", mult[i][j]);
+		}
+		printf("\n");
+	}
+	return 0;
+}
+
+
+int main()
+{
+	int a,b,c,d,i,j,k,sum=0;
+	
+	
+	printf("Enter the number of rows and column of first matrix\n");
+	scanf("%d%d", &a, &b);
+
+	printf("Enter the number of rows and column of second matrix\n");
+	scanf("%d%d", &c, &d);
+		if(b!=c)
+		{
+			printf("The matrices cannot be multiplied");
+		}
+		else
+		{
+		matr(a,b,c,d);
+		}
+	return 0;
+}

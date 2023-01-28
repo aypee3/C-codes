@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+	int x,y,a,s,m;
+	float d;
+	char choice;
+	printf("enter two numbers and operation + , - , * , / \n");
+	scanf("%d %d %c", &x, &y , &choice);
+	a=x+y;
+	s=x-y;
+	m=x*y;
+	d=x/(float) y;
+	switch (choice)
+	{
+		case'+':printf("adding two nos.:\n %d+%d = %d\n",x,y,a);
+		break;	
+		case'-':printf("subtracting two nos.:\n %d-%d = %d\n",x,y,x-y);	// we can use s instead of x-y //
+		break;
+		case'*':printf("multiplying two nos.:\n %d*%d = %d\n",x,y,x*y);	// we can use m instead of x*y //
+		break;
+		case'/':printf("dividing two nos.:\n %d/%d = %0.2f\n",x,y,x/(float) y);	// we can use d instead of x/(float) y //
+		break;
+		default:printf("it is out of syllabus.\n");	
+		break;				
+	}
+	return 0;
+	
+}

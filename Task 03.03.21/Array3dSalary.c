@@ -1,0 +1,36 @@
+#include<stdio.h>
+main()
+{
+	int i[2][3][3];
+	int m,l,k;
+	for(m=0;m<2;m++)
+	{
+		printf("For the year %d\n", m+2019);
+		for(l=0;l<3;l++)
+		{
+			printf("emp %d\n",l+1);
+			for(k=0;k<3;k++)
+			{
+				printf("enter %d number of month salary",k+1);
+				scanf("%d", &i[m][l][k]);
+				printf("\n");
+			}
+				printf("\n");
+		}
+	}
+	for(m=0;m<2;m++)
+	{	
+		for(l=0;l<3;l++)
+		{
+			for(k=0;k<3;k++)
+			{
+				printf("For the year %d the salary of emp%d for no. %d month is %d", m+2019,l+1,k+1, i[m][l][k]);
+				printf("\n");
+				
+			}
+			printf("\n");
+		}
+	
+	}
+		return 0;
+	}

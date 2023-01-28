@@ -1,0 +1,43 @@
+#include<stdio.h>
+main()
+{
+	int i[3][3];
+	int l,k;
+	for(l=0;l<3;l++)
+	{
+		printf("emp %d\n",l+1);
+		for(k=0;k<3;k++)
+		{
+			printf("enter %d number of month salary",k+1);
+			scanf("%d", &i[l][k]);
+			printf("\n");
+		}
+			printf("\n");
+	}
+	int sum1[3], max1, max2;
+	for(l=0;l<=2;l++)//l<3
+	{
+		sum1[l]=0;
+		for(k=0;k<3;k++)
+		{
+			sum1[l]+=i[l][k];
+			printf(" %d", i[l][k]);
+		}
+		printf("\t and total of emp %d salary is %d\n\n", l+1,sum1[l]);
+		max1=i[0][0];
+		if(max1<i[l][k])
+		{
+			max1=i[l][k];
+		}
+		max2=sum1[0];
+		if(max2<sum1[l])
+		{
+			max2=sum1[l];
+		}
+	}
+		printf(" the highest salary is :\n %d", max1);
+	
+		printf("\n And the highest sum of salaries is :\n %d", max2);
+		
+		return 0;
+	}

@@ -1,0 +1,77 @@
+#include<stdio.h>
+#include<windows.h>
+#include<conio.h>
+#include<unistd.h> //for sleep function
+int main()
+{
+    int i,j;
+    char str[]="\t\t*****\n\r\
+                 *     *\n\r\
+                 *     *\n\r\
+                 *     *\n\r\
+                 *     *\n\r\
+                ***\n\r\
+    \r";
+    
+    printf("%s",str);
+    system("color 56");
+    sleep(3);
+    system("cls");
+    printf("%s",str);
+    system("color 0E"); // to check color code give any false code and then check in output suggestions
+    sleep(3);
+    system("cls");
+    printf("%s",str);
+    system("color 0b");
+    sleep(3);
+    system("cls");
+
+    printf("\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\t\tLoading....\n");
+    for(j=0; j<120; j++)
+    {   system("color F0");
+        printf("*");
+        Sleep(5);
+    }
+    printf("\n\n\t\t\t\t\tPress any key to continue.");
+    for(j=0; j<10; j++)
+    {   system("color F0");
+        printf(".");
+        Sleep(10);
+    }
+    _getch();
+
+    return 0;
+}
+
+
+
+
+
+
+// #include<stdio.h>
+// #include<stdlib.h>
+// int main()
+// {
+//     int *ptr2;
+//     // ptr2=(int*)malloc(5*sizeof(int));
+//     ptr2=(int*)calloc(5,sizeof(int));
+//     printf("input the value \n");
+//     *(ptr2+0)=10;
+//     *(ptr2+1)=20;
+//     *(ptr2+2)=30;
+//     *(ptr2+3)=40;
+//     // Sleep(2000);//to sleep the program  (in miliseconds )
+//     // sleep(5);//to sleep the program  (in seconds )
+//     system("color 86");//to change color
+//     system("cls"); //for clearing previous output
+//     *(ptr2+4)=50;
+//     ptr2=realloc(ptr2,7*sizeof(int));
+//     *(ptr2+5)=70;
+//     *(ptr2+6)=90;
+//     for(int i=0;i<7;i++)
+//     {
+//         printf("%d \t",*(ptr2+i));
+//     }
+//     free(ptr2);
+//     return 0;
+// }

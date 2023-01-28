@@ -1,0 +1,35 @@
+/*#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char name[30];
+	printf("Enter the name\n");
+	fgets(name,30,stdin);
+	strrev(name);
+	printf("Reverse of name is:\n  %s",name);
+	return 0;
+}
+*/
+
+#include<stdio.h>
+int main()
+{
+	char name[100],rev[100];
+	int start,end,count=0;
+	printf("Enter the name to reverse\n");
+	gets(name);
+	for(count=0;name[count]!='\0';count++)
+	{
+	end=count-1;
+	}
+	
+	for(start=0;start<count;start++)
+	{
+		rev[start]=name[end];
+		end-=1;
+	}
+	rev[start]='\0';
+	printf("\n\nThe reverse of name is:\n%s", rev);
+}
+
+

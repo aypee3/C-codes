@@ -1,0 +1,13 @@
+#include<stdio.h>
+void main(void)
+
+{
+	FILE *filename;
+	char ch[1000];
+	filename=fopen("program.txt","r");// or filename=fopen("C:/Users/aypee/Desktop/program.txt","r");
+	fgets(ch,1000,filename);
+	printf("%s",ch); // prints till end of first line
+	fclose(filename);
+//	return 0;
+}
+	

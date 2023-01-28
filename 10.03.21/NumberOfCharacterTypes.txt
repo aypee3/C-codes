@@ -1,0 +1,36 @@
+#include<stdio.h>
+
+int main()
+{
+	char i[10];
+	int j,count1=0,count2=0,count3=0,count4=0;
+	printf("Enter the 10 inputs\n");
+	
+	for(j=0;j<10;j++)
+	{
+	scanf("%c", &i[j]);	
+	fflush(stdin);
+	}
+	for(j=0;j<10;j++)
+	{
+		if(i[j]>=65 && i[j]<91)
+		{
+			count1=count1+1;
+		}
+		else if(i[j]>=97 && i[j]<123)
+		{
+			count2=count2+1;
+		}
+		else if(i[j]>=48 && i[j]<58)
+		{
+			count3=count3+1;
+		}
+		else
+		{
+			count4=count4+1;	
+		}
+	}
+	
+	printf("The total count of Capital alphabet is %d,\n\t of Small alphabet is %d,\n\t of digits is %d,\n\t of Special Character is %d", count1,count2,count3,count4);
+	return 0;
+}

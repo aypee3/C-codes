@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int *arr;
+	printf("the size of arr is %d\n", sizeof(arr));
+	arr=(int*)malloc(1*sizeof(int));
+	printf("the size is %d\n", sizeof(arr));
+	*arr=50; // or arr=(int*)50;
+	
+	printf("the size is %d\n", sizeof(arr));
+	
+	printf("the size is %d\n", sizeof(*arr));
+	return 0;
+} 

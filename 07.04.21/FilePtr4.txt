@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+
+{
+	FILE *fp;
+	fp=fopen("read.txt","w"); // or fp=fopen("C:/Users/aypee/Desktop/read.txt","w");
+	// if we use "w" then only writes the current staements after replacing the previous values
+	char ch1[]={"This is a sample text file\n"};
+	char ch2[]={" Now this will be a new sample file text\n"};
+	fputs(ch1,fp);
+	fputs(ch2,fp);
+	
+	fclose(fp);
+	return 0;
+}
+	
+	
